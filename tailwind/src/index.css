@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root,
+.app{
+    height: 100%;
+    background-color: #ffff;
+    @apply text-black;
+}
+
+.aniline::after{
+    @apply content-[''] bg-red h-[0%] w-[4] left-0 -bottom-[5px] absolute duration-300
+}
+
+.aniline:hover::after{
+    @apply h-[100%]
+}
