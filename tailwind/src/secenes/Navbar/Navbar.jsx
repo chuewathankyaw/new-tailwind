@@ -1,12 +1,11 @@
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NavLinks from "./Navlinks"
-import mobileNav from "./mobileNav";
 import { useState } from "react";
 
 const Navbar = () => {
   const [open, setOpen] =useState(false)
   return (
-    <nav>
+    <nav className="nav">
       <div className="flex flex-cols-2 justify-between items-center font-medium px-10 shadow-xl">
         <div>
           <h1 className="text-xl md:cursor-pointer">SmilaxGolbal</h1>

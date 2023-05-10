@@ -14,10 +14,4 @@ body,
     @apply text-black;
 }
 
-.aniline::after{
-    @apply content-[''] bg-red h-[0%] w-[4] left-0 -bottom-[5px] absolute duration-300
-}
-
-.aniline:hover::after{
-    @apply h-[100%]
-}
+@import './secenes/Navbar/navbar.css'
