@@ -8,10 +8,11 @@
 html,
 body,
 #root,
-.app{
+.app {
     height: 100%;
     background-color: #ffff;
     @apply text-black;
 }
 
-@import './secenes/Navbar/navbar.css'
+@import './secenes/Navbar/navbar.css';
+@import './secenes/Home/slider.css';
