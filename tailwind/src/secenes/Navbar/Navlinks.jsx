@@ -7,9 +7,9 @@ const NavLinks = () => {
     <>
       {menus.map((data) => (
         <div>
-          <div className="px-3  md:cursor-pointer group">
+          <div className="px-3  md:cursor-pointer">
             <h1
-              className="py-7 hover:text-gray-400 transition-800 flex justify-between items-center sm:pr-0 pr-5 group dropdown "
+              className="py-7 hover:text-gray-400 transition-800 flex justify-between items-center sm:pr-0 pr-5 group  "
               onClick={() =>
                 heading !== data.name ? setHeading(data.name) : setHeading("")
               }

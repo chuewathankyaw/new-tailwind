@@ -5,17 +5,19 @@ import Navbar from "./secenes/Navbar/Navbar";
 import Home from "./secenes/Home/Home";
 import twitter from './assets/twitter.png'
 import ImgSlider from "./secenes/Home/ImgSlider";
+import Cookies from "./secenes/footer/cookie";
 function App() {
  
   return (
     <div className="app">
       {/* <Navbar/> */}
       <Navbar />
-      
+
       <Home />
-      
-      <ImgSlider/>
-      {/* <Footer /> */}
+
+      <ImgSlider />
+      <Footer />
+     
     </div>
   );
 }

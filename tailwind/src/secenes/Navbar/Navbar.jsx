@@ -1,12 +1,25 @@
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import NavLinks from "./Navlinks"
 import { useState } from "react";
+import { useEffect } from "react";
+import Cookies from "../footer/cookie";
 
 const Navbar = () => {
-  const [open, setOpen] =useState(false)
+  const [open, setOpen] = useState(false)
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 500); // Adjust the delay as needed
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <nav className="nav">
-      <div className="flex flex-cols-2 justify-between items-center font-medium px-10 shadow-xl">
+      <div className="flex flex-cols-2 justify-between items-center font-medium px-10 ">
         <div>
           <h1 className="text-xl md:cursor-pointer">SmilaxGolbal</h1>
         </div>
@@ -20,6 +33,7 @@ const Navbar = () => {
           <NavLinks />
         </div>
       </div>
+      <span className={`underline ${isLoading ? "loading" : ""}`}></span>
       {/* mobile */}
 
       <div

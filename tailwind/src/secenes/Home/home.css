@@ -18,7 +18,7 @@
   width: 100%;
 }
 .homenav .ul .li {
-  border-bottom: 0.05rem solid #fff;
+  border-bottom: 0.05rem solid #000;
   position: relative;
   z-index: 10;
 }
@@ -29,15 +29,15 @@
   justify-content: space-between;
 }
 
-.homenav .ul .li .link span {
+.link span {
   display: block;
   font-weight: 600;
   z-index: 10;
   mix-blend-mode: difference;
   display: inline-block;
   position: relative;
-  color: #fff;
-  font-size: 4rem;
+  color: #000;
+  font-size: 3rem;
   text-transform: uppercase;
 }
 
@@ -82,3 +82,25 @@
 		height: 300px;
 	}
 }
+
+/* scrolling */
+
+
+/* .scrolling-text-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.scrolling-text {
+  animation: scroll-left 10s linear ;
+  white-space: nowrap;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
