@@ -1,25 +1,34 @@
-import Cookies from "./cookie";
+import React, { useState, useEffect } from "react";
+import footer1 from '../../assets/curve.png'
+const Footer = () => {
+ useEffect(() => {
+   const handleScroll = () => {
+     const scrollElement = document.querySelector(".curve");
+     if (scrollElement) {
+       const value = 1 + window.scrollY / -500;
+       scrollElement.style.transform = `scaleY(${value})`;
+     }
+   };
 
-export default function Footer() {
-    return (
-      <footer className="h-full bg-black pt-40 relative">
-        <Cookies />
+   window.addEventListener("scroll", handleScroll);
 
-        <div>
-          {/* <h1 className="text-7xl font-bold font-opensans absolute left-20 top-10">
-            Chue Wathan <br></br> Kyaw{" "}
-          </h1> */}
+   return () => {
+     window.removeEventListener("scroll", handleScroll);
+   };
+ }, []);
 
-          <div className=" hover:bg-sky-700">
-            <div className="h-0.5 w-full bg-white  "></div>
-            <div className="h-40 w-40 rounded-full bg-black border-white border-4 absolute right-64 top-20  "></div>
-            <div>
-              <h1 className="text-white absolute right-72 top-36 text-xl">
-                About us
-              </h1>
-            </div>
-          </div>
+  return (
+  
+    <>
+   
+        <div className="footer">
+          <span className="curve">
+            <img src={footer1} alt="" />
+          </span>
         </div>
-      </footer>
-    );
-}
+     
+    </>
+  );
+};
+
+export default Footer;

@@ -10,6 +10,8 @@ import img1 from "../../assets/project-1.jpeg"
 import img2 from '../../assets/project-2.jpeg'
 import img3 from '../../assets/project-3.jpeg'
 import img4 from '../../assets/project-4.jpeg'
+import Navbar from "../Navbar/Navbar";
+import ImgSlider from "./ImgSlider";
 
 const Home = () => {
   const handleMouseMove = (e) => {
@@ -40,7 +42,6 @@ const Home = () => {
 
   return (
     <>
-      
 
       {/* <div className="container">
         <h1 className="text-6xl font-bold italic">
@@ -118,6 +119,8 @@ const Home = () => {
           </li>
         </ul>
       </nav>
+      <ImgSlider />
+      
     </>
   );
 };

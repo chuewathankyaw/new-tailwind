@@ -10,11 +10,12 @@ body,
 #root,
 .app {
     height: 100%;
-    background-color: #ffff;
+    background-color: #fff;
     @apply text-black;
 }
 
 @import './secenes/Navbar/navbar.css';
 @import './secenes/Home/slider.css';
 @import"./secenes/Home/home.css";
-@import"./secenes/footer/footer.css"
+@import"./secenes/footer/footer.css";
+@import"./secenes/career/career.css"
