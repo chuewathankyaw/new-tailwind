@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { ArrowDownIcon } from '@chakra-ui/icons'
-import {ArrowUpIcon} from '@chakra-ui/icons'
+import { ArrowUpIcon } from '@chakra-ui/icons'
+import img from '../../assets/project-1.jpeg'
 
 export default function Careers() {
      const [openDropdowns, setOpenDropdowns] = useState([]);
@@ -58,6 +59,13 @@ export default function Careers() {
                 Be part of <br></br>our success story
               </h1>
             </div>
+          </div>
+          <div className="image-container">
+            <img
+              className="transition-image"
+              src={img}
+              alt="Transition Image"
+            />
           </div>
           <div className="border-y-2 border-black py-2 mt-8">
             <div className="flex justify-between  ">

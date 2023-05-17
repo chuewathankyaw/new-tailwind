@@ -7,4 +7,26 @@
 .details.open {
   max-height:100%; /* Adjust the height as needed */
 }
+.image-container {
+  margin-left: 50%;
+  width: 50%;
+  height: 10rem;
+  position: relative;
+}
 
+.transition-image {
+  width: 50%;
+  height: 10rem;
+  position: absolute;
+  left: -100%; /* Updated: Initially position image outside the container */
+  animation: slideAnimation 2s ease-in-out forwards; /* Adjust the animation duration as desired */
+}
+
+@keyframes slideAnimation {
+  0% {
+    left: -100%; /* Updated: Start from outside the container */
+  }
+  100% {
+    left: 0; /* Updated: Move the image to the left */
+  }
+}
