@@ -87,7 +87,7 @@ const ImgSlider = () => {
             ))}
           </Marquee>
         </div>
-        <div className="-mt-10">
+        <div className="-mt-10 mb-24">
           <Marquee
             speed={30}
             className="marquee"

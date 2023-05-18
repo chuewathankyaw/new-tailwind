@@ -1,0 +1,21 @@
+.slide-enter {
+  opacity: 0;
+  width: 0;
+}
+
+.slide-enter-active {
+  opacity: 1;
+  width: 100%;
+  transition: opacity 1s, width 1s;
+}
+
+.slide-exit {
+  opacity: 1;
+  width: 100%;
+}
+
+.slide-exit-active {
+  opacity: 0;
+  width: 0;
+  transition: opacity 1s, width 1s;
+}

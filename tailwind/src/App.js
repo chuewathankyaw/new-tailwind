@@ -8,6 +8,7 @@ import Careers from "./secenes/career/career";
 import twitter from './assets/twitter.png'
 import ImgSlider from "./secenes/Home/ImgSlider";
 import Cookies from "./secenes/footer/cookie";
+import ImageSlider from "./secenes/image/Image";
 function App() {
  
   return (
@@ -18,6 +19,9 @@ function App() {
 
       <Routes>
         <Route path="/careers" element={<Careers />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/slider" element={<ImageSlider />} />
+
       </Routes>
       <Footer />
     </div>
