@@ -23,7 +23,7 @@ function App() {
         <Route path="/slider" element={<ImageSlider />} />
 
       </Routes>
-      <Footer />
+     
     </div>
   );
 }

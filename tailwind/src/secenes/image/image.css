@@ -1,21 +1,21 @@
-.slide-enter {
-  opacity: 0;
-  width: 0;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.slide-enter-active {
-  opacity: 1;
+.img-div {
+  position: relative;
   width: 100%;
-  transition: opacity 1s, width 1s;
+  height: 100%;
+  overflow: hidden;
+   transition: clip-path 1s ease;
+ clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-.slide-exit {
-  opacity: 1;
-  width: 100%;
-}
 
-.slide-exit-active {
-  opacity: 0;
-  width: 0;
-  transition: opacity 1s, width 1s;
+
+.img-div.show {
+ clip-path: polygon(0 0, 99% 0, 100% 100%, 0 100%);;
 }

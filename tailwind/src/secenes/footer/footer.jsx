@@ -5,7 +5,7 @@ const Footer = () => {
    const handleScroll = () => {
      const scrollElement = document.querySelector(".curve");
      if (scrollElement) {
-       const value = 1 + window.scrollY / -1500;
+       const value = 1 + window.scrollY / -2200;
        scrollElement.style.transform = `scaleY(${value})`;
      }
    };

@@ -1,6 +1,7 @@
 import img1 from '../../assets/project-1.jpeg'
 import { useState, useEffect } from 'react';
 import { CSSTransition } from "react-transition-group";
+import Footer from '../footer/footer';
 
 
 export default function ImageSlider() { 
@@ -11,21 +12,15 @@ const [showImage, setShowImage] = useState(false);
   }, []);
 
   return (
-      <div className="app">
-                <div className="container">
-
-      <CSSTransition
-        in={showImage}
-        timeout={1000}
-        classNames="slide"
-        unmountOnExit
-      >
-        <div className="image flex ml-40 ">
-        <img src={img1} alt="" />
-        <img src={img1} alt="" />
+    <div>
+    <div className={`container  ${showImage ? 'show' : ''}`}>
+      <div className={`img-div flex gap-6 items-center  ${showImage ? 'show' : ''}`}>
+        <img className='w-full h-80' src={img1} alt="Your Image" />
+        <img className='w-full h-80' src={img1} alt="Your Image" />
       </div>
-              </CSSTransition>
-              </div>
+    </div>
+
+      <Footer/>
     </div>
   );
       

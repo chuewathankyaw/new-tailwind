@@ -12,6 +12,7 @@ import img3 from '../../assets/project-3.jpeg'
 import img4 from '../../assets/project-4.jpeg'
 import Navbar from "../Navbar/Navbar";
 import ImgSlider from "./ImgSlider";
+import Footer from "../footer/footer";
 
 const Home = () => {
   const handleMouseMove = (e) => {
@@ -42,13 +43,6 @@ const Home = () => {
 
   return (
     <>
-
-      {/* <div className="container">
-        <h1 className="text-6xl font-bold italic">
-          Our Successful <br></br> Customer
-        </h1>{" "}
-      </div> */}
-
       <nav className="homenav">
         <ul className="ul">
           <li className="li mt-20">
@@ -61,9 +55,9 @@ const Home = () => {
                 <span>Noddles</span>
                 <span className="ml-4">01</span>
               </div>
-          
-                <ArrowForwardIcon className="text-4xl mr-8" />
-          
+
+              <ArrowForwardIcon className="text-4xl mr-8" />
+
               <div className="hover-reveal image01">
                 <img className="hidden-img" src={img1} alt="" />
               </div>
@@ -120,7 +114,8 @@ const Home = () => {
         </ul>
       </nav>
       <ImgSlider />
-      
+      <ImgSlider/>
+      <Footer />
     </>
   );
 };
